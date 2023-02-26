@@ -1,0 +1,18 @@
+current directory: /home/burt/sample/ruby_projects/alpha_blog/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/home/burt/.rbenv/versions/3.2.1/bin/ruby -I /home/burt/.rbenv/versions/3.2.1/lib/ruby/3.2.0 extconf.rb
+creating Makefile
+
+current directory: /home/burt/sample/ruby_projects/alpha_blog/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230225-30836-9uwzvn sitelibdir\=./.gem.20230225-30836-9uwzvn clean
+
+current directory: /home/burt/sample/ruby_projects/alpha_blog/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230225-30836-9uwzvn sitelibdir\=./.gem.20230225-30836-9uwzvn
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/burt/sample/ruby_projects/alpha_blog/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230225-30836-9uwzvn sitelibdir\=./.gem.20230225-30836-9uwzvn install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20230225-30836-9uwzvn/bootsnap
+
+current directory: /home/burt/sample/ruby_projects/alpha_blog/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20230225-30836-9uwzvn sitelibdir\=./.gem.20230225-30836-9uwzvn clean
