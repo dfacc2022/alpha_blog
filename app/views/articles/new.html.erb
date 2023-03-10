@@ -1,17 +1,42 @@
-<h1>Create an article</h1>
+	<h1>Create an article</h1>
 
-<%= form_for @article do |form| %>
-  <p>
-  <%= form.label :title %> <br/>
-  <%= form.text_field :title %>
-  </p>
+	<% if @article.errors.any? %>
+	<h2>The following errors prevented the articles from getting created</h2>
+	<ul>
+	<% @article.errors.full_messages.each do |msg| %>
+	<li><%= msg %></li>
+	<% end %>
+	</ul>
+	<% end %>
 
-  <p>
-  <%= form.label :description %> <br/>
-  <%= form.text_area :description %>
-  </p>
+	<%= form_for @article do |form| %>
+		<p>
+		<%= form.label :title %> <br/>
+		<%= form.text_field :title %>
+		</p>
 
-    <p>
-  <%= form.submit %>
-  </p>
-<% end %>
+		<p>
+		<%= form.label :description %> <br/>
+		<%= form.text_area :description %>
+		</p>
+
+		<p>
+		<%= form.submit %>
+		</p>
+	<% end %>
+
+	
+	<%
+=begin%>
+ go to articles_controllers, if @article is not created in the contorller error ArgumentError in Articles#new  
+<%
+=end%>
+	
+
+<%
+=begin%>
+ 	
+	https://guides.rubyonrails.org/form_helpers.html   
+<%
+=end%>
+	

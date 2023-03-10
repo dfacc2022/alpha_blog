@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
 
-  
+  #gave an new article path, after creating an resources article. go to app, controllers, create new file, articles_controller.rb(always snake case)
   resources :articles
 
 end
