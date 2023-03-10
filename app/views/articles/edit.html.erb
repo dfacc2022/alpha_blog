@@ -1,6 +1,7 @@
-	<h1>Create an article</h1>
+<h1>Edit existing article</h1>
 
-	<% if @article.errors.any? %>
+
+<%if @article.errors.any? %>
 	<h2>The following errors prevented the articles from getting created</h2>
 	<ul>
 	<% @article.errors.full_messages.each do |msg| %>
@@ -25,19 +26,4 @@
 		</p>
 	<% end %>
 
-	<%= link_to "Back to articles listing", articles_path %>
-	
-	<%
-=begin%>
- go to articles_controllers, if @article is not created in the contorller error ArgumentError in Articles#new  
-<%
-=end%>
-	
-
-<%
-=begin%>
- 	
-	https://guides.rubyonrails.org/form_helpers.html   
-<%
-=end%>
-	
+    <%= link_to "Back to articles listing", articles_path %>
